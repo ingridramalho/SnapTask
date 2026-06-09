@@ -1,7 +1,7 @@
 let cards = [
-    { q: "O que é a Série de Fibonacci?", a: "Sequência onde cada número é a soma dos dois anteriores: 0, 1, 1, 2, 3, 5, 8..." },
-    { q: "O que é recursão?", a: "Técnica onde uma função chama a si mesma para resolver subproblemas menores." },
-    { q: "Complexidade do Fibonacci recursivo?", a: "O(2^n) — exponencial. Pode ser otimizado com memoização para O(n)." }
+    { q: "Tire uma foto para gerar seus flashcards", a: "Clique no botão abaixo e selecione uma imagem" },
+    { q: "A IA vai criar 3 perguntas e respostas", a: "Baseadas no conteúdo da sua foto" },
+    { q: "Toque no card para ver a resposta", a: "Use os botões ‹ › para navegar entre os cards" }
 ];
 
 let current = 0;
@@ -36,6 +36,11 @@ prevBtn.addEventListener("click", () => {
     if (current > 0) { current--; updateCard(); }
 });
 
+nextBtn.addEventListener("click", () => {
+    if (current < cards.length - 1) { current++; updateCard(); }
+});
+
+
 backButton.addEventListener("click", () => {
     sideMenu.classList.toggle("open");
 });
@@ -52,7 +57,7 @@ document.body.appendChild(inputImagem);
 
 const btnGerarIA = document.createElement("button");
 btnGerarIA.className   = "export-btn";
-btnGerarIA.textContent = "📷 Gerar com IA (foto)";
+btnGerarIA.textContent = "Gerar com IA (foto)";
 btnGerarIA.style.marginTop = "8px";
 exportBtn.parentNode.insertBefore(btnGerarIA, exportBtn.nextSibling);
 

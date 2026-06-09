@@ -47,6 +47,15 @@ inputVideo.addEventListener("change", async () => {
     newVideoBtn.classList.add("hidden");
     typingText.innerHTML = "";
     videoStatus.innerHTML = "Enviando vídeo para a IA...";
+    
+    const videoEl = document.createElement("video");
+    videoEl.src      = URL.createObjectURL(arquivo);
+    videoEl.controls = false;
+    videoEl.autoplay = true;
+    videoEl.muted    = true;
+    videoEl.loop     = true;
+    videoEl.style.cssText = "position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:20px;z-index:1;opacity:0.5;";
+    videoPreview.appendChild(videoEl);
 
     if (arquivo.size > 10 * 1024 * 1024) {
         videoStatus.innerHTML = "Vídeo grande, pode demorar um pouco...";
@@ -55,7 +64,7 @@ inputVideo.addEventListener("change", async () => {
     try {
         const traducao = await window.traduzirLibras(arquivo);
 
-        videoStatus.innerHTML = "Vídeo processado";
+        videoStatus.innerHTML = "Vídeo processado ✅";
         let index = 0;
         const interval = setInterval(() => {
             if (index < traducao.length) {
@@ -72,8 +81,8 @@ inputVideo.addEventListener("change", async () => {
         }, 30);
 
     } catch (e) {
-        videoStatus.innerHTML  = "❌ Erro ao processar";
-        typingText.innerHTML   = "Erro: " + e.message;
+        videoStatus.innerHTML = "❌ Erro ao processar";
+        typingText.innerHTML  = "Erro: " + e.message;
         newVideoBtn.classList.remove("hidden");
     } finally {
         inputVideo.value = "";
@@ -81,6 +90,12 @@ inputVideo.addEventListener("change", async () => {
 });
 
 newVideoBtn.onclick = () => {
+    const videoEl = videoPreview.querySelector("video");
+    if (videoEl) {
+        URL.revokeObjectURL(videoEl.src);
+        videoEl.remove();
+    }
+
     uploadBtn.classList.remove("hidden");
     videoPreview.classList.add("hidden");
     transcriptionArea.classList.add("hidden");

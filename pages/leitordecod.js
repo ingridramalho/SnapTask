@@ -18,9 +18,8 @@ inputCod.style.display = "none";
 document.body.appendChild(inputCod);
 
 const btnAnalisarIA = document.createElement("button");
-btnAnalisarIA.className   = "copy-btn";
-btnAnalisarIA.textContent = "📷 Analisar foto com IA";
-btnAnalisarIA.style.cssText = "width:100%;margin-top:10px;";
+btnAnalisarIA.className = "btn-analisar-ia";
+btnAnalisarIA.textContent = "Analisar foto com IA";
 previewBox.insertAdjacentElement("afterend", btnAnalisarIA);
 
 const statusCod = document.createElement("p");

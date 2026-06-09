@@ -59,7 +59,7 @@ cardIA.style.cssText = "border: 1px dashed #6c63ff; cursor:pointer;";
 cardIA.innerHTML = `
     <div class="doc-icon"><img src="../images/editor-doc.png"></div>
     <div class="doc-info">
-        <h3>📷 Transcrever imagem com IA</h3>
+        <h3>Transcrever imagem com IA</h3>
         <small>Selecione uma foto de lousa ou caderno</small>
         <p>O Gemini extrai e organiza o texto automaticamente</p>
     </div>
