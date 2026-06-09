@@ -1,336 +1,312 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Galeria | SnapTask</title>
-
-<link rel="stylesheet" href="galeria.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria | SnapTask</title>
+    <link rel="stylesheet" href="galeria.css">
+    <script src="../script.js"></script>
+    <script src="galeria.js" defer></script>
 </head>
 
 <body>
 
-<!-- MENU BUTTON -->
+    <!-- MENU BUTTON -->
 
-<button class="back-button-fixed" id="backButton">
+    <button class="back-button-fixed" id="backButton">
 
-    <span class="back-arrow">&lt;</span>
+        <span class="back-arrow">&lt;</span>
 
-</button>
+    </button>
 
-<!-- MENU -->
+    <!-- MENU -->
 
-<div class="side-menu" id="sideMenu">
+    <div class="side-menu" id="sideMenu">
 
-    <div class="side-menu-content">
+        <div class="side-menu-content">
 
-        <div class="side-menu-title">
-            DEV NAV
+            <div class="side-menu-title">
+                DEV NAV
+            </div>
+
+            <a href="../index.html">
+
+                <div class="side-menu-item">
+
+                    <img src="../images/camera.png" class="menu-icon">
+
+                    <span>Câmera</span>
+
+                </div>
+
+            </a>
+
+            <a href="../pages/snaptask.html">
+
+                <div class="side-menu-item">
+
+                    <img src="../images/brilho.png" class="menu-icon">
+
+                    <span>SnapTask</span>
+
+                </div>
+
+            </a>
+
+            <a href="../pages/editordoc.html">
+
+                <div class="side-menu-item">
+
+                    <img src="../images/editor-doc.png" class="menu-icon">
+
+                    <span>Editor Doc</span>
+
+                </div>
+
+            </a>
+
+            <a href="../pages/leitordecod.html">
+
+                <div class="side-menu-item">
+
+                    <img src="../images/scaner.png" class="menu-icon">
+
+                    <span>Leitor Códigos</span>
+
+                </div>
+
+            </a>
+
+            <a href="../pages/qr.html">
+
+                <div class="side-menu-item">
+
+                    <img src="../images/qr-code.png" class="menu-icon">
+
+                    <span>QR Share</span>
+
+                </div>
+
+            </a>
+
+            <a href="../pages/galeria.html">
+
+                <div class="side-menu-item">
+
+                    <img src="../images/galeria.png" class="menu-icon">
+
+                    <span>Galeria</span>
+
+                </div>
+
+            </a>
+
+            <a href="../pages/flashcards.html">
+
+                <div class="side-menu-item">
+
+                    <img src="../images/brain.png" class="menu-icon">
+
+                    <span>Flashcards</span>
+
+                </div>
+
+            </a>
+
+            <a href="../pages/libras.html">
+
+                <div class="side-menu-item">
+
+                    <img src="../images/mao.png" class="menu-icon">
+
+                    <span>Libras</span>
+
+                </div>
+
+            </a>
+
         </div>
 
-        <a href="../index.html">
-
-            <div class="side-menu-item">
-
-                <img src="../images/camera.png"
-                class="menu-icon">
-
-                <span>Câmera</span>
-
-            </div>
-
-        </a>
-
-        <a href="../pages/snaptask.html">
-
-            <div class="side-menu-item">
-
-                <img src="../images/brilho.png"
-                class="menu-icon">
-
-                <span>SnapTask</span>
-
-            </div>
-
-        </a>
-
-        <a href="../pages/editordoc.html">
-
-            <div class="side-menu-item">
-
-                <img src="../images/editor-doc.png"
-                class="menu-icon">
-
-                <span>Editor Doc</span>
-
-            </div>
-
-        </a>
-
-        <a href="../pages/leitordecod.html">
-
-            <div class="side-menu-item">
-
-                <img src="../images/scaner.png"
-                class="menu-icon">
-
-                <span>Leitor Códigos</span>
-
-            </div>
-
-        </a>
-
-        <a href="../pages/qr.html">
-
-            <div class="side-menu-item">
-
-                <img src="../images/qr-code.png"
-                class="menu-icon">
-
-                <span>QR Share</span>
-
-            </div>
-
-        </a>
-
-        <a href="../pages/galeria.html">
-
-            <div class="side-menu-item">
-
-                <img src="../images/galeria.png"
-                class="menu-icon">
-
-                <span>Galeria</span>
-
-            </div>
-
-        </a>
-
-        <a href="../pages/flashcards.html">
-
-            <div class="side-menu-item">
-
-                <img src="../images/brain.png"
-                class="menu-icon">
-
-                <span>Flashcards</span>
-
-            </div>
-
-        </a>
-
-        <a href="../pages/libras.html">
-
-            <div class="side-menu-item">
-
-                <img src="../images/mao.png"
-                class="menu-icon">
-
-                <span>Libras</span>
-
-            </div>
-
-        </a>
-
     </div>
 
-</div>
+    <div class="app-container">
 
-<div class="app-container">
+        <div class="header">
 
-    <div class="header">
+            <h1 class="app-title">
+                JOVI Camera
+            </h1>
 
-        <h1 class="app-title">
-            JOVI Camera
-        </h1>
+            <p class="app-subtitle">
+                Experiência de câmera intuitiva + SnapTask para processamento inteligente
+            </p>
 
-        <p class="app-subtitle">
-            Experiência de câmera intuitiva + SnapTask para processamento inteligente
-        </p>
+        </div>
 
-    </div>
+        <div class="phone-mockup">
 
-    <div class="phone-mockup">
+            <div class="gallery-page">
 
-        <div class="gallery-page">
+                <!-- HEADER -->
 
-            <!-- HEADER -->
+                <div class="page-header">
 
-            <div class="page-header">
+                    <a href="../index.html" class="back-btn">
 
-                <a href="../index.html"
-                class="back-btn">
+                        <img src="../images/retorno.png" class="header-icon">
 
-                    <img src="../images/retorno.png"
-                    class="header-icon">
+                    </a>
 
-                </a>
-
-                <h2>Galeria</h2>
-
-            </div>
-
-            <!-- TABS -->
-
-            <div class="tabs">
-
-                <button class="tab-btn active"
-                id="galleryTab">
-
-                    Fotos
-
-                </button>
-
-                <button class="tab-btn"
-                id="sharedTab">
-
-                    Galeria Compartilhada
-
-                </button>
-
-            </div>
-
-            <!-- GALERIA -->
-
-            <div class="content-area"
-            id="galleryContent">
-
-                <div class="photo-grid">
-
-                    <div class="photo photo1"></div>
-                    <div class="photo photo2"></div>
-                    <div class="photo photo3"></div>
-                    <div class="photo photo4"></div>
-                    <div class="photo photo5"></div>
-                    <div class="photo photo6"></div>
-                    <div class="photo photo7"></div>
-                    <div class="photo photo8"></div>
-                    <div class="photo photo9"></div>
+                    <h2>Galeria</h2>
 
                 </div>
 
-            </div>
+                <!-- TABS -->
 
-            <!-- SHARED -->
+                <div class="tabs">
 
-            <div class="content-area hidden"
-            id="sharedContent">
+                    <button class="tab-btn active" id="galleryTab">
 
-                <!-- CREATE / JOIN -->
+                        Fotos
 
-                <div id="shareSetup">
+                    </button>
 
-                    <div class="card">
+                    <button class="tab-btn" id="sharedTab">
 
-                        <div class="card-title">
-                            Criar Sala
-                        </div>
-
-                        <p class="card-text">
-                            Gere um código e compartilhe com outro dispositivo para sincronizar fotos em tempo real.
-                        </p>
-
-                        <button class="primary-btn"
-                        id="createRoomBtn">
-
-                            Gerar Código
-
-                        </button>
-
-                    </div>
-
-                    <div class="card">
-
-                        <div class="card-title">
-                            Entrar em Sala
-                        </div>
-
-                        <input
-                        type="text"
-                        class="join-input"
-                        id="joinInput"
-                        placeholder="Insira o código...">
-
-                        <button class="green-btn">
-
-                            Conectar
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-                <!-- ACTIVE ROOM -->
-
-                <div class="hidden"
-                id="activeRoom">
-
-                    <div class="active-card">
-
-                        <div class="sync-icon"></div>
-
-                        <p class="active-title">
-                            Sala Ativa
-                        </p>
-
-                        <p class="shared-code"
-                        id="sharedCode">
-
-                            SNAP-000000
-
-                        </p>
-
-                        <p class="active-sub">
-                            Compartilhe este código com o outro dispositivo
-                        </p>
-
-                    </div>
-
-                    <div class="synced-top">
-
-                        <span>
-                            Fotos sincronizadas
-                        </span>
-
-                        <span class="devices">
-                            2 dispositivos
-                        </span>
-
-                    </div>
-
-                    <div class="photo-grid synced-grid">
-
-                        <div class="photo photo1 online"></div>
-                        <div class="photo photo2 online"></div>
-                        <div class="photo photo3"></div>
-                        <div class="photo photo4"></div>
-                        <div class="photo photo5"></div>
-                        <div class="photo photo6"></div>
-
-                    </div>
-
-                    <button class="end-btn"
-                    id="endRoomBtn">
-
-                        Encerrar Sala
+                        Galeria Compartilhada
 
                     </button>
 
                 </div>
 
+                <!-- GALERIA -->
+
+                <div class="content-area" id="galleryContent">
+
+                    <div class="photo-grid">
+
+                        <div class="photo photo1"></div>
+                        <div class="photo photo2"></div>
+                        <div class="photo photo3"></div>
+                        <div class="photo photo4"></div>
+                        <div class="photo photo5"></div>
+                        <div class="photo photo6"></div>
+                        <div class="photo photo7"></div>
+                        <div class="photo photo8"></div>
+                        <div class="photo photo9"></div>
+
+                    </div>
+
+                </div>
+
+                <!-- SHARED -->
+
+                <div class="content-area hidden" id="sharedContent">
+
+                    <!-- CREATE / JOIN -->
+
+                    <div id="shareSetup">
+
+                        <div class="card">
+
+                            <div class="card-title">
+                                Criar Sala
+                            </div>
+
+                            <p class="card-text">
+                                Gere um código e compartilhe com outro dispositivo para sincronizar fotos em tempo real.
+                            </p>
+
+                            <button class="primary-btn" id="createRoomBtn">
+
+                                Gerar Código
+
+                            </button>
+
+                        </div>
+
+                        <div class="card">
+
+                            <div class="card-title">
+                                Entrar em Sala
+                            </div>
+
+                            <input type="text" class="join-input" id="joinInput" placeholder="Insira o código...">
+
+                            <button class="green-btn">
+
+                                Conectar
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ACTIVE ROOM -->
+
+                    <div class="hidden" id="activeRoom">
+
+                        <div class="active-card">
+
+                            <div class="sync-icon"></div>
+
+                            <p class="active-title">
+                                Sala Ativa
+                            </p>
+
+                            <p class="shared-code" id="sharedCode">
+
+                                SNAP-000000
+
+                            </p>
+
+                            <p class="active-sub">
+                                Compartilhe este código com o outro dispositivo
+                            </p>
+
+                        </div>
+
+                        <div class="synced-top">
+
+                            <span>
+                                Fotos sincronizadas
+                            </span>
+
+                            <span class="devices">
+                                2 dispositivos
+                            </span>
+
+                        </div>
+
+                        <div class="photo-grid synced-grid">
+
+                            <div class="photo photo1 online"></div>
+                            <div class="photo photo2 online"></div>
+                            <div class="photo photo3"></div>
+                            <div class="photo photo4"></div>
+                            <div class="photo photo5"></div>
+                            <div class="photo photo6"></div>
+
+                        </div>
+
+                        <button class="end-btn" id="endRoomBtn">
+
+                            Encerrar Sala
+
+                        </button>
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
 
     </div>
 
-</div>
-
-<script src="galeria.js"></script>
-
 </body>
+
 </html>

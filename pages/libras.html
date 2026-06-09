@@ -1,220 +1,222 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
-
-<title>Libras | SnapTask</title>
-
-<link rel="stylesheet" href="libras.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Libras | SnapTask</title>
+    <link rel="stylesheet" href="libras.css">
+    <script src="../script.js" defer></script>
+    <script src="libras.js" defer></script>
 </head>
 
 <body>
 
-<button class="back-button-fixed" id="backButton">
-    <span class="back-arrow">&lt;</span>
-</button>
+    <button class="back-button-fixed" id="backButton">
+        <span class="back-arrow">&lt;</span>
+    </button>
 
-<div class="side-menu" id="sideMenu">
+    <div class="side-menu" id="sideMenu">
 
-    <div class="side-menu-content">
+        <div class="side-menu-content">
 
-        <div class="side-menu-title"> DEV NAV </div>
+            <div class="side-menu-title"> DEV NAV </div>
 
-        <a href="../index.html">
-            <div class="side-menu-item">
-                <img src="../images/camera.png" class="menu-icon">
-                <span>Câmera</span>
-            </div>
-        </a>
-
-        <a href="./snaptask.html">
-            <div class="side-menu-item">
-                <img src="../images/brilho.png" class="menu-icon">
-                <span>SnapTask</span>
-            </div>
-        </a>
-
-        <a href="./editordoc.html">
-            <div class="side-menu-item">
-                <img src="../images/editor-doc.png" class="menu-icon">
-                <span>Editor Doc</span>
-            </div>
-        </a>
-
-        <a href="./leitordecod.html">
-            <div class="side-menu-item">
-                <img src="../images/scaner.png" class="menu-icon">
-                <span>Dev OCR</span>
-            </div>
-        </a>
-
-        <a href="./qr.html">
-            <div class="side-menu-item">
-                <img src="../images/qr-code.png" class="menu-icon">
-                <span>QR Share</span>
-            </div>
-        </a>
-
-        <a href="./galeria.html">
-            <div class="side-menu-item">
-                <img src="../images/galeria.png" class="menu-icon">
-                <span>Galeria</span>
-            </div>
-        </a>
-
-        <a href="./flashcards.html">
-            <div class="side-menu-item">
-                <img src="../images/brain.png" class="menu-icon">
-                <span>Flashcards</span>
-            </div>
-        </a>
-
-        <a href="./libras.html">
-            <div class="side-menu-item">
-                <img src="../images/mao.png" class="menu-icon">
-                <span>Libras</span>
-            </div>
-        </a>
-
-    </div>
-
-</div>
-
-<div class="app-container">
-
-    <div class="header">
-
-        <h1 class="app-title"> JOVI Camera </h1>
-
-        <p class="app-subtitle"> Experiência de câmera intuitiva + SnapTask para processamento inteligente </p>
-
-    </div>
-
-    <div class="phone-mockup">
-
-        <div class="libras-page">
-
-            <div class="page-header">
-
-                <a href="./snaptask.html" class="back-btn">
-                    <img src="../images/retorno.png" class="header-icon">
-                </a>
-
-                <div>
-
-                    <h2> Libras </h2>
-
-                    <span> Tradução de sinais em tempo real </span>
+            <a href="../index.html">
+                <div class="side-menu-item">
+                    <img src="../images/camera.png" class="menu-icon">
+                    <span>Câmera</span>
                 </div>
+            </a>
 
-            </div>
+            <a href="./snaptask.html">
+                <div class="side-menu-item">
+                    <img src="../images/brilho.png" class="menu-icon">
+                    <span>SnapTask</span>
+                </div>
+            </a>
 
-            <div class="mode-tabs">
+            <a href="./editordoc.html">
+                <div class="side-menu-item">
+                    <img src="../images/editor-doc.png" class="menu-icon">
+                    <span>Editor Doc</span>
+                </div>
+            </a>
 
-                <button class="mode-btn active" id="videoTab">  Upload de Vídeo </button>
+            <a href="./leitordecod.html">
+                <div class="side-menu-item">
+                    <img src="../images/scaner.png" class="menu-icon">
+                    <span>Dev OCR</span>
+                </div>
+            </a>
 
-                <button class="mode-btn" id="micTab">Microfone</button>
-            </div>
+            <a href="./qr.html">
+                <div class="side-menu-item">
+                    <img src="../images/qr-code.png" class="menu-icon">
+                    <span>QR Share</span>
+                </div>
+            </a>
 
-            <div class="content-area" id="videoMode">
-                <button class="upload-box" id="uploadBtn">
-                    <div class="upload-icon">⬆</div>
+            <a href="./galeria.html">
+                <div class="side-menu-item">
+                    <img src="../images/galeria.png" class="menu-icon">
+                    <span>Galeria</span>
+                </div>
+            </a>
+
+            <a href="./flashcards.html">
+                <div class="side-menu-item">
+                    <img src="../images/brain.png" class="menu-icon">
+                    <span>Flashcards</span>
+                </div>
+            </a>
+
+            <a href="./libras.html">
+                <div class="side-menu-item">
+                    <img src="../images/mao.png" class="menu-icon">
+                    <span>Libras</span>
+                </div>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="app-container">
+
+        <div class="header">
+
+            <h1 class="app-title"> JOVI Camera </h1>
+
+            <p class="app-subtitle"> Experiência de câmera intuitiva + SnapTask para processamento inteligente </p>
+
+        </div>
+
+        <div class="phone-mockup">
+
+            <div class="libras-page">
+
+                <div class="page-header">
+
+                    <a href="./snaptask.html" class="back-btn">
+                        <img src="../images/retorno.png" class="header-icon">
+                    </a>
 
                     <div>
-                        <h3>Enviar vídeo</h3>
 
-                        <p> Selecione um vídeo com linguagem de sinais</p>
+                        <h2> Libras </h2>
 
+                        <span> Tradução de sinais em tempo real </span>
                     </div>
 
-                </button>
+                </div>
 
-                <div class="video-preview hidden" id="videoPreview">
+                <div class="mode-tabs">
 
-                    <div class="video-overlay"></div>
+                    <button class="mode-btn active" id="videoTab"> Upload de Vídeo </button>
 
-                    <div class="video-center">
+                    <button class="mode-btn" id="micTab">Microfone</button>
+                </div>
 
-                        <div class="video-emoji">
+                <div class="content-area" id="videoMode">
+                    <button class="upload-box" id="uploadBtn">
+                        <div class="upload-icon">⬆</div>
+
+                        <div>
+                            <h3>Enviar vídeo</h3>
+
+                            <p> Selecione um vídeo com linguagem de sinais</p>
 
                         </div>
 
-                        <p id="videoStatus"> Processando vídeo... </p>
+                    </button>
+
+                    <div class="video-preview hidden" id="videoPreview">
+
+                        <div class="video-overlay"></div>
+
+                        <div class="video-center">
+
+                            <div class="video-emoji">
+
+                            </div>
+
+                            <p id="videoStatus"> Processando vídeo... </p>
+
+                        </div>
+
+                        <div class="progress-bar" id="progressBar"></div>
 
                     </div>
 
-                    <div class="progress-bar" id="progressBar"></div>
+                    <div class="transcription hidden" id="transcriptionArea">
 
-                </div>
+                        <div class="transcription-top">
 
-                <div class="transcription hidden" id="transcriptionArea">
+                            <div class="transcription-label"> Transcrição </div>
 
-                    <div class="transcription-top">
+                            <div class="editable-badge" id="editableBadge"> ✏ Editável</div>
 
-                        <div class="transcription-label"> Transcrição </div>
+                        </div>
 
-                        <div class="editable-badge" id="editableBadge"> ✏ Editável</div>
+                        <div class="transcription-box" id="processingText">
 
-                    </div>
-
-                    <div class="transcription-box" id="processingText">
-
-                        <span id="typingText"></span>
-
-                        <span class="cursor">|</span>
-
-                    </div>
-
-                    <textarea class="edit-text hidden" id="editableText"></textarea>
-
-                    <button class="new-video-btn hidden" id="newVideoBtn">Novo Vídeo</button>
-
-                </div>
-
-            </div>
-
-            <div class="content-area hidden" id="micMode">
-
-                <div class="mic-section">
-
-                    <div class="mic-wrapper">
-
-                        <div class="wave-ring ring1"></div>
-                        <div class="wave-ring ring2"></div>
-                        <div class="wave-ring ring3"></div>
-
-                        <button class="mic-btn" id="micButton">
-
-                        </button>
-
-                    </div>
-
-                    <p class="mic-text" id="micStatus">Mantenha pressionado para falar</p>
-
-                    <div class="sound-wave hidden" id="soundWave">
-
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-                        <div class="bar"></div>
-
-                    </div>
-
-                    <div class="speech-box hidden" id="speechBox">
-
-                        <div class="speech-title">Speech-to-Text</div>
-
-                        <div class="speech-content">
-
-                            <span id="speechText"></span>
+                            <span id="typingText"></span>
 
                             <span class="cursor">|</span>
+
+                        </div>
+
+                        <textarea class="edit-text hidden" id="editableText"></textarea>
+
+                        <button class="new-video-btn hidden" id="newVideoBtn">Novo Vídeo</button>
+
+                    </div>
+
+                </div>
+
+                <div class="content-area hidden" id="micMode">
+
+                    <div class="mic-section">
+
+                        <div class="mic-wrapper">
+
+                            <div class="wave-ring ring1"></div>
+                            <div class="wave-ring ring2"></div>
+                            <div class="wave-ring ring3"></div>
+
+                            <button class="mic-btn" id="micButton">
+
+                            </button>
+
+                        </div>
+
+                        <p class="mic-text" id="micStatus">Mantenha pressionado para falar</p>
+
+                        <div class="sound-wave hidden" id="soundWave">
+
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+
+                        </div>
+
+                        <div class="speech-box hidden" id="speechBox">
+
+                            <div class="speech-title">Speech-to-Text</div>
+
+                            <div class="speech-content">
+
+                                <span id="speechText"></span>
+
+                                <span class="cursor">|</span>
+
+                            </div>
 
                         </div>
 
@@ -228,9 +230,6 @@ content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=c
 
     </div>
 
-</div>
-
-<script src="libras.js"></script>
-
 </body>
+
 </html>
