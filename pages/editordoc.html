@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Editor Doc | SnapTask</title>
     <link rel="stylesheet" href="./editordoc.css">
+    <script src="../script.js" defer></script>
+    <script src="./editordoc.js" defer></script>
 </head>
+
 <body>
 
     <button class="back-button-fixed" id="backButton">
@@ -75,107 +79,106 @@
         </div>
     </div>
 
-<div class="app-container">
+    <div class="app-container">
 
-    <div class="header">
-        <h1 class="app-title">JOVI Camera</h1>
-        <p class="app-subtitle">  Experiência de câmera intuitiva + SnapTask para processamento inteligente </p>
-    </div>
+        <div class="header">
+            <h1 class="app-title">JOVI Camera</h1>
+            <p class="app-subtitle"> Experiência de câmera intuitiva + SnapTask para processamento inteligente </p>
+        </div>
 
-    <div class="phone-mockup">
+        <div class="phone-mockup">
 
-        <div class="editor-screen" id="editorScreen">
+            <div class="editor-screen" id="editorScreen">
 
-            <div class="top-header">
+                <div class="top-header">
 
-                <a href="./snaptask.html" class="header-icon-btn">
-                    <img src="../images/retorno.png" class="header-icon">
-                </a>
+                    <a href="./snaptask.html" class="header-icon-btn">
+                        <img src="../images/retorno.png" class="header-icon">
+                    </a>
 
-                <div class="title-area">
-                    <h2>Editor Doc</h2>
-                    <span>Notas geradas a partir de fotos de lousa</span>
+                    <div class="title-area">
+                        <h2>Editor Doc</h2>
+                        <span>Notas geradas a partir de fotos de lousa</span>
+                    </div>
+
                 </div>
 
+                <div class="recent-label">
+                    <span>ARQUIVOS RECENTES</span>
+                </div>
+
+                <div class="docs-container" id="docsContainer"></div>
+
             </div>
 
-            <div class="recent-label">
-                <span>ARQUIVOS RECENTES</span>
-            </div>
+            <div class="document-screen hidden" id="documentScreen">
+                <div class="doc-header">
 
-            <div class="docs-container" id="docsContainer"></div>
+                    <button class="header-icon-btn" onclick="closeDocument()">
+                        <img src="../images/retorno.png" class="header-icon">
+                    </button>
+
+                    <div class="doc-header-text">
+
+                        <h2 id="docTitle"> Documento </h2>
+                        <span id="docDate"> Hoje </span>
+
+                    </div>
+
+                </div>
+
+                <div class="preview-box">
+
+                    <div class="preview-paper" id="previewPaper">
+
+                        <div class="preview-line w1"></div>
+                        <div class="preview-line w2"></div>
+                        <div class="preview-line w3"></div>
+                        <div class="preview-line w4"></div>
+                        <div class="preview-line w5"></div>
+
+                    </div>
+
+                    <div class="processing-overlay hidden" id="processingOverlay">
+
+                        <div class="loader"></div>
+                        <span>Corrigindo...</span>
+
+                    </div>
+
+                </div>
+
+                <div class="doc-actions">
+
+                    <button class="process-btn" id="processBtn" onclick="processDocument()">
+                        <span> Corrigir Perspectiva </span>
+                    </button>
+
+                    <button class="contrast-btn">
+                        <span> Contraste </span>
+                    </button>
+
+                </div>
+
+                <div class="extract-header">
+
+                    <span class="extract-label"> TEXTO EXTRAÍDO </span>
+
+                    <div class="editable-badge">
+                        <img src="../images/edit.png">
+                        <span>Editável</span>
+                    </div>
+
+                </div>
+
+                <textarea id="docTextarea" class="doc-textarea"></textarea>
+
+            </div>
 
         </div>
 
-        <div class="document-screen hidden" id="documentScreen">
-            <div class="doc-header">
-
-                <button class="header-icon-btn" onclick="closeDocument()">
-                    <img src="../images/retorno.png" class="header-icon">
-                </button>
-
-                <div class="doc-header-text">
-
-                    <h2 id="docTitle"> Documento </h2>
-                    <span id="docDate">  Hoje </span>
-
-                </div>
-
-            </div>
-
-            <div class="preview-box">
-
-                <div class="preview-paper" id="previewPaper">
-
-                    <div class="preview-line w1"></div>
-                    <div class="preview-line w2"></div>
-                    <div class="preview-line w3"></div>
-                    <div class="preview-line w4"></div>
-                    <div class="preview-line w5"></div>
-
-                </div>
-
-                <div class="processing-overlay hidden" id="processingOverlay">
-
-                    <div class="loader"></div>
-                    <span>Corrigindo...</span>
-
-                </div>
-
-            </div>
-
-            <div class="doc-actions">
-
-                <button class="process-btn" id="processBtn" onclick="processDocument()">
-                    <span> Corrigir Perspectiva </span>
-                </button>
-
-                <button class="contrast-btn">
-                    <span>  Contraste </span>
-                </button>
-
-            </div>
-
-            <div class="extract-header">
-
-                <span class="extract-label"> TEXTO EXTRAÍDO </span>
-
-                <div class="editable-badge">
-                    <img src="../images/edit.png">
-                    <span>Editável</span>
-                </div>
-
-            </div>
-
-            <textarea id="docTextarea" class="doc-textarea"></textarea>
-
-        </div>
-
     </div>
-
-</div>
-
-<script src="./editordoc.js"></script>
 
 </body>
+
 </html>

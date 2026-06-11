@@ -248,6 +248,10 @@ body{
 .code-box{
     flex:1;
     background:#10131c;
+    color:#747474;
+    font-size:12px;
+    line-height:1.6;
+    font-family:Consolas,monospace;
     border:1px solid #232632;
     border-radius:18px;
     overflow:auto;
@@ -319,6 +323,19 @@ body{
     color:#fff;
     padding:15px 20px;
     cursor:pointer;
+}
+
+.btn-analisar-ia {
+    width: 100%;
+    margin-top: 10px;
+    background: #29cc68;
+    color: #000;
+    border: none;
+    border-radius: 16px;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 @media(max-width:768px){

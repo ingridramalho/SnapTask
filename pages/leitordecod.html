@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Dev OCR | SnapTask</title>
-
     <link rel="stylesheet" href="./leitordecod.css">
-
+    <script src="../script.js" defer></script>
+    <script src="./leitordecod.js" defer></script>
 </head>
 
 <body>
@@ -40,8 +37,7 @@
 
                 <div class="side-menu-item">
 
-                    <img src="../images/brilho.png"
-                    class="menu-icon">
+                    <img src="../images/brilho.png" class="menu-icon">
 
                     <span>SnapTask</span>
 
@@ -53,8 +49,7 @@
 
                 <div class="side-menu-item">
 
-                    <img src="../images/editor-doc.png"
-                    class="menu-icon">
+                    <img src="../images/editor-doc.png" class="menu-icon">
 
                     <span>Editor Doc</span>
 
@@ -66,8 +61,7 @@
 
                 <div class="side-menu-item">
 
-                    <img src="../images/scaner.png"
-                    class="menu-icon">
+                    <img src="../images/scaner.png" class="menu-icon">
 
                     <span>Leitor Códigos</span>
 
@@ -89,8 +83,7 @@
 
                 <div class="side-menu-item">
 
-                    <img src="../images/galeria.png"
-                    class="menu-icon">
+                    <img src="../images/galeria.png" class="menu-icon">
 
                     <span>Galeria</span>
 
@@ -102,8 +95,7 @@
 
                 <div class="side-menu-item">
 
-                    <img src="../images/brain.png"
-                    class="menu-icon">
+                    <img src="../images/brain.png" class="menu-icon">
 
                     <span>Flashcards</span>
 
@@ -115,8 +107,7 @@
 
                 <div class="side-menu-item">
 
-                    <img src="../images/mao.png"
-                    class="menu-icon">
+                    <img src="../images/mao.png" class="menu-icon">
 
                     <span>Libras</span>
 
@@ -158,8 +149,7 @@
 
                     <button class="share-btn">
 
-                        <img src="../images/compartilhar.png"
-                        class="share-icon">
+                        <img src="../images/compartilhar.png" class="share-icon">
 
                     </button>
 
@@ -167,8 +157,7 @@
 
                 <div class="preview-box">
 
-                    <img src="../images/scaner.png"
-                    class="preview-icon">
+                    <img src="../images/scaner.png" class="preview-icon">
 
                     <p>
                         Foto do código fonte
@@ -177,45 +166,17 @@
                 </div>
 
                 <div class="code-header">
-
-                    <span class="code-title">
-                        CÓDIGO EXTRAÍDO
-                    </span>
-
-                    <span class="lang-badge">
-                        Python
-                    </span>
-
+                    <span class="code-title">CÓDIGO EXTRAÍDO</span>
+                    <span class="lang-badge">Linguagem</span>
                 </div>
 
-                <div class="code-box"
-                id="codeBox">
-
-                <pre><code>
-                <span class="purple">def</span> <span class="blue">fibonacci</span>(n):
-                    <span class="purple">if</span> n &lt;= <span class="orange">1</span>:
-                        <span class="purple">return</span> 
-
-                    <span class="purple">return</span> <span class="blue">fibonacci</span>(n-<span class="orange">1</span>) + <span class="blue">fibonacci</span>(n-<span class="orange">2</span>)
-
-                result = <span class="blue">fibonacci</span>(<span class="orange">10</span>)
-
-                <span class="purple">print</span>(<span class="green">f"Resultado: {result}"</span>)
-                </code></pre>
-
+                <div class="code-box" id="codeBox">
+                    <p >
+                        Envie uma foto de código para extrai-lo
+                    </p>
                 </div>
 
-                <textarea id="editorArea" class="editor-area">
-                    def fibonacci(n):
-                        if n <= 1:
-                            return n
-
-                        return fibonacci(n-1) + fibonacci(n-2)
-
-                    result = fibonacci(10)
-
-                    print(f"Resultado: {result}")
-                </textarea>
+                <textarea id="editorArea" class="editor-area" placeholder="O código extraído e identado aparecerá aqui..."></textarea>
 
 
                 <div class="actions">
@@ -232,7 +193,6 @@
 
     </div>
 
-    <script src="./leitordecod.js"></script>
-
 </body>
+
 </html>

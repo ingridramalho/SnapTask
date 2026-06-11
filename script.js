@@ -327,3 +327,70 @@ if (backButton && sideMenu) {
     });
 
 }
+
+// ============================================================
+//  INTEGRAÇÃO COM O BACKEND 
+// ============================================================
+
+const BACKEND_URL = "https://snaptaskbackend.onrender.com";
+
+async function gerarFlashcards(arquivoImagem) {
+    const form = new FormData();
+    form.append("imagem", arquivoImagem);
+ 
+    const resposta = await fetch(`${BACKEND_URL}/flashcards`, {
+        method: "POST",
+        body: form,
+    });
+ 
+    const dados = await resposta.json();
+    if (!resposta.ok || dados.erro) throw new Error(dados.erro || "Erro ao gerar flashcards.");
+    return dados.cards;
+}
+
+async function gerarDocumento(arquivoImagem) {
+    const form = new FormData();
+    form.append("imagem", arquivoImagem);
+ 
+    const resposta = await fetch(`${BACKEND_URL}/documento`, {
+        method: "POST",
+        body: form,
+    });
+ 
+    const dados = await resposta.json();
+    if (!resposta.ok || dados.erro) throw new Error(dados.erro || "Erro ao gerar documento.");
+    return dados.texto;
+}
+
+async function lerCodigo(arquivoImagem) {
+    const form = new FormData();
+    form.append("imagem", arquivoImagem);
+ 
+    const resposta = await fetch(`${BACKEND_URL}/codigo`, {
+        method: "POST",
+        body: form,
+    });
+ 
+    const dados = await resposta.json();
+    if (!resposta.ok || dados.erro) throw new Error(dados.erro || "Erro ao ler código.");
+    return { linguagem: dados.linguagem, codigo: dados.codigo };
+}
+
+async function traduzirLibras(arquivoVideo) {
+    const form = new FormData();
+    form.append("video", arquivoVideo);
+ 
+    const resposta = await fetch(`${BACKEND_URL}/libras`, {
+        method: "POST",
+        body: form,
+    });
+ 
+    const dados = await resposta.json();
+    if (!resposta.ok || dados.erro) throw new Error(dados.erro || "Erro ao traduzir Libras.");
+    return dados.traducao;
+}
+
+window.gerarDocumento = gerarDocumento;
+window.gerarFlashcards = gerarFlashcards;
+window.lerCodigo = lerCodigo;
+window.traduzirLibras = traduzirLibras;
